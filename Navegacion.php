@@ -9,13 +9,17 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="css/Style.css" rel="stylesheet" type="text/css"/>
 <!------ Include the above in your HEAD tag ---------->
+<?php
+session_start();
+
+?>
 
 </head>
 </html>
 <link href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" rel="stylesheet">
 
 <div class="nav-side-menu">
-    <div class="brand">Brand Logo</div>
+    <div class="brand"><?php echo $_SESSION['login'] ?> </div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
   
         <div class="menu-list">
@@ -71,8 +75,8 @@
                   </li>
 
                  <li>
-                  <a href="#">
-                  <i class="fa fa-users fa-lg"></i> Users
+                  <a href="cerrar_sesion.php">
+                  <i class="fa fa-users fa-lg"></i> Cerrar Sesion
                   </a>
                 </li>
             </ul>

@@ -6,6 +6,8 @@
 
 
 
+
+
 <div class="container">
     <div class="row">
         <div class="col-sm-4 col-md-4 col-md-offset-4">
@@ -19,7 +21,7 @@
                     Sign in</button>             
                 </form>
             </div>
-            <a href="panel.php" class="text-center new-account">Nuevo Usuario </a>
+            <a href="Login.php" class="text-center new-account">Nuevo Usuario </a>
         </div>
     </div>
 </div>
